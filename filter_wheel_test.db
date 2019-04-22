@@ -1,0 +1,16 @@
+record(longout,"TEST:FILTERWHEEL:SETPOS"){
+  field(PINI, "1")
+  field(TSE, -2)
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbFilterWheel.nSetPos=")
+  field(SCAN, "Passive")
+}
+
+record(longin,"TEST:FILTERWHEEL:GETPOS"){
+  field(PINI, "1")
+  field(TSE, -2)
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbFilterWheel.nGetPos?")
+  field(SCAN, ".5 second")
+}
+
